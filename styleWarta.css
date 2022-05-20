@@ -1,0 +1,275 @@
+/* Navbar */
+.navbar {
+    font-family: Coolvetica;
+    font-size: 18px;
+    background-color: #007F5F;
+    position:sticky;
+    top: 0;
+    z-index: 999;
+}
+.nav-link{
+    text-transform: uppercase;
+    margin-right: 30px;
+    color: #fff !important;
+}
+/* Warta */
+.garis{
+    display:flex;
+    padding: 30px;
+}
+.garis h2{
+    font-family: coolvetica;
+    color: #007F5F;
+}
+.garis span{
+    display: block;
+    width: 30px;
+    height: 6px;
+    background-color: #007F5F;
+    transform: rotate(90deg);
+    margin-top: 15px;
+}
+.cardWarta{
+    padding-bottom: 40px;
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+.card-footer{
+    background: none;
+}
+.card-deck{
+    margin-top: -15px;
+}
+.bg{
+    background-color: #007F5F;
+}
+.card-title{
+    font-family: coolvetica;
+}
+.card-text{
+    font-family: sansation;
+}
+.btn-success{
+    background-color: #007F5F;
+}
+.card img{
+    width: 200px;
+}
+
+/* footer */
+.rangka{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 10vh;
+    flex-direction: column;
+}
+.rangka{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background:#007F5F;
+}
+main div .foter{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: #007F5F;
+}
+footer .wadah {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+footer .wadah .sec{
+    margin-right: 30px;
+}
+footer .wadah .sec.aboutus{
+    width: 30%;
+}
+footer .wadah .sec h3{
+    position: relative;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+footer .wadah .sec h3:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background: #DDDF00;
+}
+footer p{
+    color: rgb(212, 207, 207);
+}
+footer ul {
+    margin-left: -40px;
+}
+.sci {
+    margin-top: 5px;
+    display: flex;
+}
+.sci li {
+    list-style: none;
+}
+.sci li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #018564;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.sci li a:hover{
+    background: #55a630;
+}
+.sci li a .fab{
+    color: #fff;
+    font-size: 20px;
+}
+.address{
+    position: relative;
+    width: 25%;
+    justify-content: left;
+}
+.phone{
+    width: calc(30%-60px);
+    margin-right: 0 !important;
+}
+.icon{
+    position: relative;
+}
+.icon li{
+    display: flex;
+    margin-bottom: 10px;
+}
+.icon li span:nth-child(1){
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.icon li a{
+    color: rgb(212, 207, 207);
+    text-decoration: none;
+}
+.icon li a:hover{
+    color: #fff;
+}
+.copyright{
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    color: rgb(212, 207, 207);
+    background:#018564;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile */
+@media (max-width: 576px) {
+    .jumbotron {
+        height: 350px;
+        align-items: center;
+    }
+    .jumbotron img {
+        width: 450px;
+        margin-top: -400px;
+    }
+    footer{
+        padding: 40px;
+    }
+    footer .wadah{
+        flex-direction: column;
+    }
+    footer .wadah .sec{
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    footer .wadah .sec.aboutus{
+        width: 100%;
+    }
+    .address{
+        width: 100%;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .jumbotron img {
+        width: 450px;
+        margin-top: -350px;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 992px) {
+    .nav-link:hover::after{
+        content: '';
+        display: block;
+        border-bottom: 3px solid #fff;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+    .jumbotron img {
+        float: right;
+        width: 650px;
+        margin-top: -420px;
+    }
+    .lead{
+        text-shadow: none;
+    }
+    .gallery-a{
+        transform: translateY(-400px);
+    }
+    .gallery-b{
+        transform: translateY(-300px);
+    }
+    .gallery-c{
+        transform: translateY(-100px);
+    }
+    .gallery-d{
+        transform: translateY(-100px);
+    }
+    .gallery-e{
+        transform: translateY(-200px);
+    }
+ }
